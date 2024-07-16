@@ -10,7 +10,7 @@ When you are finished with development, run `npm run build` to create a producti
 
 <img width="1560" alt="Screenshot 2024-07-16 at 10 47 26 AM" src="https://github.com/user-attachments/assets/2eb69bb8-20e3-43a7-8573-ada06a3f71db">
 
-The overlap array of string values should be formatted like this in this venn diagram:
+The overlap array of string values should be formatted like the example below:
 
 [
     "TV",
