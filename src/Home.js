@@ -10,17 +10,11 @@ import styled from "styled-components";
 
 const Styles = styled.div`
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
   @import url('https://fonts.googleapis.com/css?family=Open+Sans:wght@100;300;400;500;700;900&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,100;1,700&display=swap');
-
   @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital,wght@0,300;0,400;0,500;0,600;1,100;1,700&display=swap');
-
-
   @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,100;1,700&display=swap');
-
   @import url("https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css");
 
   .lightBubble{
@@ -28,16 +22,12 @@ const Styles = styled.div`
     padding:1em;
     border-radius: .5rem;
     display: flex;
-
     flex-direction: column;
-  min-width:100%;
-
+    min-width:100%;
   }
-
   p{
     font-weight: 500
   }
-
   p.large{
     font-size: 22px;
     margin-top:0
@@ -57,88 +47,29 @@ const Styles = styled.div`
     box-shadow: 0px 30px 60px rgba(0, 19, 87, 0.04);
     padding:.6em;
     margin-bottom:1em;
-      align-items: center;
+    align-items: center;
   }
-
   .whiteAcross p{
     color:black
   }
-
   .upDown{
     display: flex;
     flex-direction: column;
-
     font-family: 'Roboto', sans-serif;
     border: 1px solid black;
     max-width: 490px;
     margin: 2em auto 0 auto;
-
-
-  max-height: 498px;
-
+    max-height: 498px;
   }
-
-
-  .varianceBubble.positive{
-    color:black;
-    font-size: 11px;
-        border: 2px solid #009c38;
-        border-radius: 1rem;
-        padding: 0.3em 1em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-height: 30px;
-  }
-
-  .varianceBubble.positive i{
-    color:#009c38;
-    margin-right:3px
-  }
-  .varianceBubble.negative{
-    color:black;
-    font-size: 11px;
-  border: 2px solid #ff1003;
-  border-radius: 1rem;
-  padding: 0.3em 1em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-height: 30px;
-  }
-
-
-  .varianceBubble.negative i{
-    color:#ff1003;
-    margin-right:3px;
-    transform: rotate(180deg);
-
-  }
-  .varianceBubble.neutral{
-    color:black;
-    font-size: 11px;
-  border: 2px solid #ffda00;
-  border-radius: 1rem;
-  padding: 0.3em 1em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-height: 30px;
-  }
-
   .dots p{
     color:#637087 !important
   }
-
   .varianceBubble.neutral i{
   display: none
-
   }
-
   .upDown.unsetWidth{
       max-width: 100%;
   }
-
   :-webkit-scrollbar-track {
    border-radius: 0.125rem;
    background-color: lightgray;
@@ -150,198 +81,92 @@ const Styles = styled.div`
      height: 0px;
   }
   ::-webkit-scrollbar-thumb {
-
-
       height: 0px;
   }
-
-
-  .progress {
-      --bs-progress-height: 30px !important;
-      --bs-progress-font-size: 0.1rem !important;
-      --bs-progress-bg: transparent;
-      --bs-progress-border-radius: 2px !important;
-      --bs-progress-bar-color: #fff;
-      --bs-progress-bar-bg: #6253da !important;
-      max-width: 100% !important;
-  }
-   .progress {
-      --bs-progress-height: 36px !important;
-      --bs-progress-font-size: 0.1rem !important;
-      --bs-progress-bg: #002169 !important;
-      --bs-progress-border-radius: 100px !important;
-      margin-bottom: 30px;
-
-  }
-   .progress-bar {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      overflow: hidden;
-      color: blue;
-      text-align: center;
-      white-space: nowrap;
-      border-radius: 100px
-  }
-  .progress-label {
-    color: #14171b;
-    font-size: 17px;
-      font-weight: 500;
-      position: absolute;
-      z-index: 999;
-      top: 5px;
-      left: 13px;
-
-  }
-
-  .progress-label.white {
-    color: white;
-    font-size: 17px;
-      font-weight: 500;
-      position: absolute;
-      z-index: 999;
-      top: 5px;
-      left: 13px;
-
-  }
-
   p{
     color:#14171b
   }
-
-
-
   .dots p i{
     margin-right: 5px;
    }
 
-
-  .col-md-3 .progress-bar{
-      --bs-progress-bar-bg: #002169 !important;
+  #venn{
+    background: white;
+    display:flex;
+    justify-content:center;
+    padding:0em 0em 3em 0em;
+    width:100%;
+  }
+  .venn-intersection path{
+    fill-opacity: .2 !important;
   }
 
-  .col-md-3 .progress-label{
-    color: white !important;
-    left: unset;
+  svg path {
+      stroke: white;
+      stroke-width: 0px;
+  }
+
+  svg text {
+      fill: white;
+      font-size: 14px;
+  }
+  .overlap{
+    background:#002169;
+    padding: .5em 1em;
+    border-radius: 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    right: unset;
-    position: relative;
-    margin-top: -60px;
-  top: unset;
+    color: white;
+    margin-bottom: 3em;
 
   }
-
-  p.gray{
-    color:#637087 !important
+  .overlap p{
+    color:white !important
   }
-#venn{
-  background: white;
-  display:flex;
-  justify-content:center;
-  padding:0em 0em 3em 0em;
-  width:100%;
-}
 
+  .overlap h3{
+    color:white !important
+  }
 
+  .black-text{
+    font-size:17px !important;
+    fill:black !important
+  }
 
-.secondary-class:nth-child(5) path{
-fill: #6fd0e9 !important
-}
+  .venn-intersection .black-text{
+    display:none
+  }
 
+  .across{
+    display:flex;
+    justify-content:space-between;
+    margin-top:3%;
+    margin-left:-3vw !important
+  }
+  .across .halfWidth{
+    width:50%;
+    display:flex;
+    flex-direction:column;
+  }
+  .across .halfWidth .overlap{
+    margin-bottom:1.5em
+  }
+  .across #venn{
+    padding-bottom:0em !important
+  }
 
-
-.venn-intersection path{
-  fill-opacity: .2 !important;
-}
-
-
-
-svg path {
-    stroke: white;
-    stroke-width: 0px;
-}
-
-svg text {
-    fill: white;
-
-    font-size: 14px;
-}
-
-
-
-.overlap{
-  background:#002169;
-  padding: .5em 1em;
-border-radius: 1rem;
-display: flex;
-justify-content: space-between;
-align-items: center;
-color: white;
-margin-bottom: 3em;
-
-}
-.overlap p{
-  color:white !important
-}
-
-.overlap h3{
-  color:white !important
-}
-
-.black-text{
-
-  font-size:17px !important;
-  fill:black !important
-}
-
-.venn-intersection .black-text{
-  display:none
-}
-
-.venn-intersection:hover .black-text{
-
-}
-
-.across{
-  display:flex;
-  justify-content:space-between;
-
-  margin-top:3%;
-  margin-left:-3vw !important
-}
-
-
-.across .halfWidth{
-  width:50%;
-  display:flex;
-  flex-direction:column;
-}
-
-
-.across .halfWidth .overlap{
-  margin-bottom:1.5em
-}
-
-.across #venn{
-  padding-bottom:0em !important
-}
-
-
-#title{
-  font-weight: 600;
-  margin-bottom:-1em
-}
+  #title{
+    font-weight: 600;
+    margin-bottom:-1em
+  }
 
   `;
 
 
 export const Home = ({ data, config, queryResponse, details, bodyStyle}) => {
 
-
 var { investment, chooseLabel,  numbers, reachPercentage, writeTitle, writeTitle2, titleColor, bodyStyle, color_title, across, hideTitle, align, size, colors, bubbleColor, hideOverlap, changeRightTitle } = config;
-
 
 const { dimension_like, measure_like, pivots } = queryResponse.fields;
 const fields = {
@@ -356,7 +181,6 @@ const dimensionName = fields.dimensions[0];
 
   const Content = config.reachPercentage.split(",").map((d, i) => ({
   reachPercentage: d,
-
   numbers: config.numbers.split(",")[i],
   investment: config.investment.split(",")[i],
 
@@ -367,8 +191,6 @@ if(reachPercentage.length === 0 && numbers.length === 0 && investment.length ===
 
   return (
   <>
-
-
     <p>*Please select each dropdown under Values in the Options in order to display the visual.</p>
     <p>*Then select Venn Background Colors from the color palette under Style in the Options in order to display the visual.</p>
   </>
@@ -413,8 +235,6 @@ function getSingleValueLengths(data) {
 
 const singleValueLengths = getSingleValueLengths(sortedData);
 const numberOfSingleValues = singleValueLengths.length;
-
-
 
 var filteredArray = sortedData;
 
@@ -516,8 +336,6 @@ colors && dotColors.length > 0
    ? dotColors.map((color, index) => color)
    : ["#12d465", "#ffda00", "#0066ff", "#e22bb7", "#6fd0e9"];
 
-
-
 d3.selectAll(".venn-area.venn-circle path")
   .style("fill", (d, i) => circleColors[i % circleColors.length]);
 
@@ -609,8 +427,6 @@ d3.selectAll(".venn-area.venn-circle path")
             config={config}>
             </div>
         </Row>
-
-
         <div className="halfWidth">
 
         <Row>
@@ -622,9 +438,7 @@ d3.selectAll(".venn-area.venn-circle path")
 
           </Row>
 
-
           <Row>
-
             <Col md={12}>
 
             {console.log(numberOfSingleValues)}
@@ -663,8 +477,6 @@ d3.selectAll(".venn-area.venn-circle path")
 
         </Container>
         </div>
-
-
         </div>
 
 </Styles>
